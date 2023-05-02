@@ -1,5 +1,6 @@
-!pip install git+https://github.com/openai/whisper.git
-!pip install pydub
+#google colaboratoryで実行
+#!pip install git+https://github.com/openai/whisper.git
+#!pip install pydub
 
 import whisper
 from pydub import AudioSegment
