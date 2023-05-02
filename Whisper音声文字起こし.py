@@ -26,7 +26,7 @@ for i in range(0, len(sound), segment_length):
 # 切り出された音声ファイルをリストに格納
 segment_paths = [f"segment_{i}.mp3" for i in range(len(segments))]
 
-#日本語指定で音声の文字起こし
+#音声を日本語で文字起こし
 for i in range(len(segment_paths)):
   result = model.transcribe(segment_paths[i], verbose=True, language="ja")
   print(result["text"])
