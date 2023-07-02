@@ -6,9 +6,12 @@
 # !pip install -q pdf2image
 
 # 対応言語
-#https://tesseract-ocr.github.io/tessdoc/Data-Files-in-different-versions.html
+# https://tesseract-ocr.github.io/tessdoc/Data-Files-in-different-versions.html
 # 日本語の場合
-#!apt-get install -qq tesseract-ocr-jpn
+# !apt-get install -qq tesseract-ocr-jpn
+# 中国語の場合
+# !apt-get install -qq tesseract-ocr-chi-sim
+# !apt-get install -qq tesseract-ocr-chi-tra
 
 # Tesseractの言語データパスを設定
 import os
@@ -19,7 +22,7 @@ from pdf2image import convert_from_path
 from PIL import Image
 
 # PDFファイルのパス
-pdf_path = "日本語.pdf"
+pdf_path = "hoge.pdf"
 
 # PDFを画像に変換
 images = convert_from_path(pdf_path)
